@@ -8,10 +8,11 @@ params:
   subtitle: "A blog about software development, technology, and other stuff."
 languages:
   en:
-    contentDir: content/en
-    languageName: English
+    contentDir: content
     weight: 0
-    default: true
+    languageName: English
+    params:
+      default: true
   es:
     contentDir: content/es
     languageName: Español
