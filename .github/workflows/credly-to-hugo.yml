@@ -1,0 +1,4 @@
+- name: Credly to Hugo importer
+  uses: michaelcontento/credly2hugo-action@v1.0.1
+  with:
+    name: lecaros
