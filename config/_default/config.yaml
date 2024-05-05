@@ -17,3 +17,11 @@ languages:
     contentDir: content/es
     languageName: Español
     weight: 1
+menu:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 1
+    - name: About
+      pageRef: /about/
+      weight: 2
