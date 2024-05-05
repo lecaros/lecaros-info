@@ -12,13 +12,11 @@ params:
   subtitle: "A blog about software development, technology, and other stuff."
 languages:
   en:
-    contentDir: content
     weight: 0
     languageName: English
     params:
       default: true
   es:
-    contentDir: content/es
     languageName: Español
     weight: 1
 menu:
