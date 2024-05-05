@@ -10,6 +10,9 @@ sidebar:
     alt: "Lecaros"
 widgets:
   homepage:
+    - type: "search"
+      params:
+        title: "Search"
     - type: "categories"
       params:
         title: "Categories"
