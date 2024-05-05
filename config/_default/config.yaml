@@ -40,4 +40,5 @@ menu:
       url: https://twitter.com/lecaros
       params:
         icon: "brand-twitter"
-
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/lecaros-cl/
