@@ -1,4 +1,13 @@
 name: Credly to Hugo importer
-uses: michaelcontento/credly2hugo-action@v1.0.1
-with:
-    name: lecaros
+on:
+    push:
+        branches:
+            - main
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: michaelcontento/credly2hugo-action@v1.0.1
+              with:
+                  name: lecaros
