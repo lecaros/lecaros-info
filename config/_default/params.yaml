@@ -1,9 +1,10 @@
 mainSections: ["posts"]
 
 enableEmoji: true
+enableGitInfo: true
 sidebar:
   emoji: "🤘"
-  subtitle: "A blog about software development, technology, and other stuff."
+  subtitle: "A blog about software development, support, technology, and other stuff."
   avatar:
     src: "/img/avatar.png"
     alt: "Lecaros"
