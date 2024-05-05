@@ -1,1 +1,5 @@
 mainSections: ["posts"]
+
+enableEmoji: true
+sidebar:
+  emoji: "🤘"
