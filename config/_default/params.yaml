@@ -8,3 +8,8 @@ sidebar:
   avatar:
     src: "/img/avatar.png"
     alt: "Lecaros"
+widgets:
+  homepage:
+    - type: "categories"
+      params:
+        title: "Categories"
