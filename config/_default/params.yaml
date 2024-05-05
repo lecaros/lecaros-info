@@ -3,3 +3,4 @@ mainSections: ["posts"]
 enableEmoji: true
 sidebar:
   emoji: "🤘"
+  subtitle: "A blog about software development, technology, and other stuff."
