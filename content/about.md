@@ -11,8 +11,16 @@ Software Engineer with over 20 years of experience in the IT industry, currently
 This site is a collection of thoughts, projects, and experiences. 
 
 
+{{ range .Site.Data.credlybadges }}
+<div class="badge">
+    <img src="{{ .image }}" alt="{{ .name }}">
+    <h2>{{ .name }}</h2>
+    <p>{{ .description }}</p>
+</div>
+{{ end }}
 
-{{ range first 3 .Site.Data.CredlyBadges }}
+
+{{ range first 3 .Site.Data.credlybadges }}
 
 {{ $credly := . }}
 
