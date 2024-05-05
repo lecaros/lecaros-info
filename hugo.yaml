@@ -2,3 +2,17 @@ baseURL: https://beta.lecaros.info/
 languageCode: en-us
 title: lecaros.info
 theme: hugo-theme-stack
+params:
+  contact:
+    email: hola@lecaros.info
+  subtitle: "A blog about software development, technology, and other stuff."
+languages:
+  en:
+    contentDir: content/en
+    languageName: English
+    weight: 0
+    default: true
+  es:
+    contentDir: content/es
+    languageName: Español
+    weight: 1
