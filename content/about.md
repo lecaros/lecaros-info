@@ -9,4 +9,6 @@ Software Engineer with over 20 years of experience in the IT industry, currently
 
 This site is a collection of thoughts, projects, and experiences.
 
+### Certifications
+
 {{< badges >}}
