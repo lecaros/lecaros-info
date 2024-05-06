@@ -1,8 +1,9 @@
 {{ range .Site.Data.CredlyBadges }}
-<div class="badge">
-    <img src="{{ .LocalImagePath }}" alt="{{ .Name }}">
-    <h2>{{ .Name }}</h2>
-    <p>{{ .Description }}</p>
-    <a href="{{ .CredlyUrl }}">View on Credly</a>
-</div>
+{{ $credly := . }}
+{{ $image := (resources.Get .LocalImagePath).Resize "150x150" }}
+<img
+        src="{{ $image.RelPermalink }}"
+        width="{{ $image.Width }}"
+        height="{{ $image.Height }}"
+        alt="{{ $credly.Description }}">
 {{ end }}
