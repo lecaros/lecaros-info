@@ -2,10 +2,11 @@
 {{ $credly := . }}
 {{ if in $credly.Description "demonstrated"  }}
 {{ $image := (resources.Get .LocalImagePath).Resize "150x150" }}
-<img
-        src="{{ $image.RelPermalink }}"
-        width="{{ $image.Width }}"
-        height="{{ $image.Height }}"
-        alt="{{ $credly.Description }}" >
-{{ end }}
+<a href="{{ $credly.credlyurl }}">
+    <img
+            src="{{ $image.RelPermalink }}"
+            width="{{ $image.Width }}"
+            height="{{ $image.Height }}"
+            alt="{{ $credly.Description }}" >
+</a>{{ end }}
 {{ end }}
