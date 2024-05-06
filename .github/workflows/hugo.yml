@@ -57,6 +57,10 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Get Credly data
+        uses: michaelcontento/credly2hugo-action@v1.0.1
+        with:
+          username: lecaros
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
