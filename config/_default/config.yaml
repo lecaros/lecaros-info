@@ -1,11 +1,14 @@
 baseURL: https://bblog.lecaros.info/
 languageCode: en-us
-title: lecaros.info
+title: Observability, telemetry pipelines, development, support, and other stuff.
 theme: hugo-theme-stack
 markup:
   tableOfContents:
     startLevel: 2
     endLevel: 4
+  goldmark:
+    renderer:
+      unsafe: true
 params:
   contact:
     email: hola@lecaros.info
