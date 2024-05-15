@@ -45,3 +45,8 @@ menu:
         icon: "brand-twitter"
     - name: LinkedIn
       url: https://www.linkedin.com/in/lecaros-cl/
+services:
+  googleAnalytics:
+    trackingID: "G-2B9R1Z7L7L"
+    respectDoNotTrack: true
+    enable: true
