@@ -32,7 +32,7 @@ theme = 'PaperMod'
   # Add one entry per talk you want to surface on the homepage.
    [[params.talks]]
      title = "Inside the Telemetry Data Plane: Constraints, Tradeoffs, and Scale - José Lecaros"
-     event = "CNCF [Cloud Native Computing Foundation]"
+     event = "CNCF Observability Summit NA 2026"
      videoId = "I34Ma0Avpxg"
      url = "https://www.youtube.com/watch?v=I34Ma0Avpxg"
      thumbnail = "https://i.ytimg.com/vi/I34Ma0Avpxg/hqdefault.jpg"
