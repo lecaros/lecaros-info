@@ -1,0 +1,38 @@
+baseURL = 'https://lecaros.info/'
+languageCode = 'en-us'
+title = 'José Lecaros'
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = 'auto'
+  ShowShareButtons = true
+  ShowReadingTime = false
+
+  # This creates the clean, centralized "Linktree" style homepage we designed
+  [params.profileMode]
+    enabled = true
+    title = "Hi, I'm José Lecaros 👋"
+    subtitle = "Staff Technical Support Engineer specializing in Telemetry & Observability.\nWith over 20 years of experience, I help organizations build robust data pipelines and actively contribute to the Fluent community.\nBased in Chile 🇨🇱."
+    imageUrl = "https://github.com/lecaros.png"
+    imageTitle = "José Lecaros"
+    imageWidth = 150
+    imageHeight = 150
+
+    # Social / External Links
+    [[params.profileMode.buttons]]
+      name = "GitHub"
+      url = "https://github.com/lecaros"
+    [[params.profileMode.buttons]]
+      name = "LinkedIn"
+      url = "https://linkedin.com/in/lecaros-cl"
+    [[params.profileMode.buttons]]
+      name = "Verified Credentials (Credly)"
+      url = "https://www.credly.com/users/lecaros"
+
+[menu]
+  # Top navigation bar
+  [[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/lecaros"
+    weight = 10
