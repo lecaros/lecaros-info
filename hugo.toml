@@ -31,6 +31,12 @@ theme = 'PaperMod'
 
   # Add one entry per talk you want to surface on the homepage.
    [[params.talks]]
+     title = "Inside the Telemetry Data Plane: Constraints, Tradeoffs, and Scale - José Lecaros"
+     event = "CNCF [Cloud Native Computing Foundation]"
+     videoId = "I34Ma0Avpxg"
+     url = "https://www.youtube.com/watch?v=I34Ma0Avpxg"
+     thumbnail = "https://i.ytimg.com/vi/I34Ma0Avpxg/hqdefault.jpg"
+   [[params.talks]]
      title = "Parsing 101 with Fluent Bit"
      event = "Online Webinar"
      date = "2024-07-24"
@@ -38,6 +44,36 @@ theme = 'PaperMod'
      url = "https://www.youtube.com/watch?v=PZaL70vaCrg"
      description = "Learn the basics of parsing with Fluent Bit and how to use it to extract data from logs."
      thumbnail = "https://img.youtube.com/vi/PZaL70vaCrg/hqdefault.jpg"
+   [[params.talks]]
+     title = "Optimization and Best Practices with Fluent Bit 3.0"
+     event = "OSS Community"
+     videoId = "oj-W5ISSwvk"
+     url = "https://www.youtube.com/watch?v=oj-W5ISSwvk"
+     thumbnail = "https://i.ytimg.com/vi/oj-W5ISSwvk/hqdefault.jpg"
+   [[params.talks]]
+     title = "[Webinar] Fluent Bit Operations & Best Practices"
+     event = "OSS Community"
+     videoId = "lxVFnGN5OpM"
+     url = "https://www.youtube.com/watch?v=lxVFnGN5OpM"
+     thumbnail = "https://i.ytimg.com/vi/lxVFnGN5OpM/hqdefault.jpg"
+   [[params.talks]]
+     title = "Advanced Parsing with Fluent Bit"
+     event = "OSS Community"
+     videoId = "VrYIUwCn9SE"
+     url = "https://www.youtube.com/watch?v=VrYIUwCn9SE"
+     thumbnail = "https://i.ytimg.com/vi/VrYIUwCn9SE/hqdefault.jpg"
+   [[params.talks]]
+     title = "How to alleviate backpressure and best practices with Fluent Bit"
+     event = "OSS Community"
+     videoId = "vnp26nhK2vo"
+     url = "https://www.youtube.com/watch?v=vnp26nhK2vo"
+     thumbnail = "https://i.ytimg.com/vi/vnp26nhK2vo/hqdefault.jpg"
+   [[params.talks]]
+     title = "Fluent Bit Office Hours #83 - Fluent Bit 101 - Multiline Parsers"
+     event = "OSS Community"
+     videoId = "vqM3DCbevMs"
+     url = "https://www.youtube.com/watch?v=vqM3DCbevMs"
+     thumbnail = "https://i.ytimg.com/vi/vqM3DCbevMs/hqdefault.jpg"
 
 [menu]
   # Top navigation bar
