@@ -11,7 +11,7 @@ theme = 'PaperMod'
   # This creates the clean, centralized "Linktree" style homepage we designed
   [params.profileMode]
     enabled = true
-    title = "Hi, I'm José Lecaros 👋"
+    title = "Hi, I'm José Lecaros Cisterna 👋"
     subtitle = "Staff Technical Support Engineer specializing in Telemetry & Observability.\nWith over 20 years of experience, I help organizations build robust data pipelines and actively contribute to the Fluent community.\nBased in Chile 🇨🇱."
     imageUrl = "https://github.com/lecaros.png"
     imageTitle = "José Lecaros"

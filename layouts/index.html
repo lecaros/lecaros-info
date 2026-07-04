@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us" class="scroll-smooth">
+<html lang="{{ .Site.LanguageCode | default "en" }}" class="scroll-smooth">
 <head>
-	<meta name="generator" content="Hugo 0.163.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>José Lecaros | Telemetry & Observability Engineer</title>
+    <!-- Pulls the title from your hugo.toml -->
+    <title>{{ .Site.Title }} | Telemetry & Observability Engineer</title>
     <meta name="description" content="Personal website of José Lecaros Cisterna - Telemetry, Observability, and Open Source Contributor based in Chile.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -53,7 +52,7 @@
 </script>
 
 <nav class="max-w-4xl mx-auto px-6 py-8 flex justify-between items-center">
-    <a href="http://localhost:1313/" class="text-2xl font-bold tracking-tight hover:text-primary transition-colors">lecaros</a>
+    <a href="{{ .Site.BaseURL }}" class="text-2xl font-bold tracking-tight hover:text-primary transition-colors">lecaros</a>
     <div class="flex gap-6 items-center">
         <a href="https://github.com/lecaros" target="_blank" class="hover:text-primary transition-colors"><i class="fab fa-github text-xl"></i></a>
         <a href="https://linkedin.com/in/lecaros-cl" target="_blank" class="hover:text-primary transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
@@ -68,39 +67,35 @@
 
     <section class="flex flex-col-reverse md:flex-row items-center gap-10 mb-20 animate-fade-in-up">
         <div class="flex-1 text-center md:text-left">
-            
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I&#39;m José Lecaros Cisterna 👋</h1>
+            <!-- Dynamically pulls from params.profileMode in hugo.toml -->
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ .Site.Params.profileMode.title }}</h1>
             <p class="text-xl text-secondary dark:text-gray-400 mb-6 leading-relaxed">
-                Staff Technical Support Engineer specializing in Telemetry &amp; Observability.<br>With over 20 years of experience, I help organizations build robust data pipelines and actively contribute to the Fluent community.<br>Based in Chile 🇨🇱.
+                {{ .Site.Params.profileMode.subtitle | markdownify | replaceRE "\n" "<br>" | safeHTML }}
             </p>
             <div class="flex gap-4 justify-center md:justify-start">
-                
-                
-                <a href="https://github.com/lecaros" target="_blank" class="bg-gray-900 dark:bg-white dark:text-gray-900 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
+                {{ range .Site.Params.profileMode.buttons }}
+                {{ if eq .name "GitHub" }}
+                <a href="{{ .url }}" target="_blank" class="bg-gray-900 dark:bg-white dark:text-gray-900 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
                     <i class="fab fa-github"></i> GitHub
                 </a>
-                
-                
-                
-                <a href="https://linkedin.com/in/lecaros-cl" target="_blank" class="bg-[#0077b5] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
+                {{ else if eq .name "LinkedIn" }}
+                <a href="{{ .url }}" target="_blank" class="bg-[#0077b5] text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                
-                
-                
-                
+                {{ end }}
+                {{ end }}
             </div>
         </div>
         <div class="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-5xl font-bold shadow-lg shrink-0 overflow-hidden">
-            <img src="https://github.com/lecaros.png" alt="José Lecaros" class="w-full h-full object-cover">
+            <img src="{{ .Site.Params.profileMode.imageUrl }}" alt="{{ .Site.Title }}" class="w-full h-full object-cover">
         </div>
     </section>
 
-    
+    <!-- Projects Section (Currently hardcoded, can be made dynamic later) -->
     <section class="mb-20">
         <h2 class="text-2xl font-bold mb-8 border-b-2 border-gray-200 dark:border-gray-700 pb-2">Top Repositories</h2>
         <div class="grid md:grid-cols-2 gap-6">
-            
+            <!-- Project 1 -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow bg-white dark:bg-[#242629]">
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-xl font-bold text-primary">fluent-bit</h3>
@@ -114,7 +109,7 @@
                 </div>
             </div>
 
-            
+            <!-- Project 2 -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow bg-white dark:bg-[#242629]">
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-xl font-bold text-primary">calyptia-flog</h3>
@@ -127,7 +122,7 @@
                 </div>
             </div>
 
-            
+            <!-- Project 3 -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow bg-white dark:bg-[#242629]">
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-xl font-bold text-primary">fluent-bit-docs</h3>
@@ -140,7 +135,7 @@
                 </div>
             </div>
 
-            
+            <!-- Project 4 -->
             <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow bg-white dark:bg-[#242629]">
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-xl font-bold text-primary">calyptia-chunk-inspector</h3>
@@ -161,23 +156,19 @@
             <p class="mb-6 text-gray-600 dark:text-gray-300 max-w-lg">
                 Verified skills in Digital Badges and specialized technologies. View my full portfolio on Credly.
             </p>
-            
-            
-            
-            
-            
-            
-            
-            <a href="https://www.credly.com/users/lecaros" target="_blank" class="inline-flex items-center gap-2 bg-[#FF6B00] hover:bg-[#e66000] text-white px-6 py-3 rounded-lg font-medium transition-colors">
+            <!-- Pulls Credly link from hugo.toml -->
+            {{ range .Site.Params.profileMode.buttons }}
+            {{ if eq .name "Verified Credentials (Credly)" }}
+            <a href="{{ .url }}" target="_blank" class="inline-flex items-center gap-2 bg-[#FF6B00] hover:bg-[#e66000] text-white px-6 py-3 rounded-lg font-medium transition-colors">
                 <i class="fas fa-award"></i> View on Credly
             </a>
-            
-            
+            {{ end }}
+            {{ end }}
         </div>
     </section>
 
     <footer class="text-center text-gray-500 dark:text-gray-400 pt-8 border-t border-gray-200 dark:border-gray-700">
-        <p>&copy; 2026 José Lecaros. Built with <a href="https://gohugo.io/" class="hover:text-primary">Hugo</a>.</p>
+        <p>&copy; {{ now.Year }} {{ .Site.Title }}. Built with <a href="https://gohugo.io/" class="hover:text-primary">Hugo</a>.</p>
         <div class="mt-4 flex justify-center gap-4">
             <a href="https://github.com/lecaros" class="hover:text-gray-900 dark:hover:text-white transition-colors"><i class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/lecaros-cl" class="hover:text-gray-900 dark:hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
