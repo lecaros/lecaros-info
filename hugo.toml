@@ -25,9 +25,19 @@ theme = 'PaperMod'
     [[params.profileMode.buttons]]
       name = "LinkedIn"
       url = "https://linkedin.com/in/lecaros-cl"
-    [[params.profileMode.buttons]]
-      name = "Verified Credentials (Credly)"
-      url = "https://www.credly.com/users/lecaros"
+  [[params.profileMode.buttons]]
+    name = "Verified Credentials (Credly)"
+    url = "https://www.credly.com/users/lecaros"
+
+  # Add one entry per talk you want to surface on the homepage.
+   [[params.talks]]
+     title = "Parsing 101 with Fluent Bit"
+     event = "Online Webinar"
+     date = "2024-07-24"
+     videoId = "PZaL70vaCrg"
+     url = "https://www.youtube.com/watch?v=PZaL70vaCrg"
+     description = "Learn the basics of parsing with Fluent Bit and how to use it to extract data from logs."
+     thumbnail = "https://img.youtube.com/vi/PZaL70vaCrg/hqdefault.jpg"
 
 [menu]
   # Top navigation bar
