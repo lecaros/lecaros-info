@@ -1,5 +1,6 @@
 baseURL = 'https://lecaros.info/'
-languageCode = 'en-us'
+canonifyURLs = true
+locale = 'en-us'
 title = 'José Lecaros Cisterna'
 theme = 'PaperMod'
 
