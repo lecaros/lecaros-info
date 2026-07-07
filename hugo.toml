@@ -83,3 +83,8 @@ theme = 'PaperMod'
     name = "GitHub"
     url = "https://github.com/lecaros"
     weight = 10
+
+[security]
+  [security.exec]
+    allow = ['^npx$', '^postcss$', '^node$']
+    osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
