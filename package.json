@@ -1,0 +1,30 @@
+{
+  "name": "lecaros-info",
+  "version": "1.0.0",
+  "description": "Personal Hugo site for José Lecaros Cisterna.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lecaros/lecaros-info.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lecaros/lecaros-info/issues"
+  },
+  "homepage": "https://github.com/lecaros/lecaros-info#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.5.2",
+    "postcss": "^8.5.16",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.19"
+  },
+  "dependencies": {
+    "lightningcss": "^1.32.0"
+  }
+}
